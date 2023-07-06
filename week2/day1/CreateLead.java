@@ -23,6 +23,7 @@ public class CreateLead {
 		driver.findElement(By.id("createLeadForm_firstNameLocal")).sendKeys("thamizh");
 		driver.findElement(By.id("createLeadForm_departmentName")).sendKeys("Training");
 		driver.findElement(By.id("createLeadForm_description")).sendKeys("Jul23Batch3");
+		driver.findElement(By.xpath("//input[@id='createLeadForm_primaryPhoneNumber']")).sendKeys("60178");
 		driver.findElement(By.id("createLeadForm_primaryEmail")).sendKeys("pavazh@gmail.com");
 		WebElement statePR=driver.findElement(By.id("createLeadForm_generalStateProvinceGeoId"));
 		Select sec= new Select(statePR);
